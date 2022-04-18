@@ -1,0 +1,126 @@
+
+@media only screen and (min-width:1200px){
+    .prosuct-carousel{
+        
+    }
+    .slider-xit-prodaj-title{
+        font-size: 44px;
+        padding: 30px 0;
+        font-weight: 700;
+    }
+    .product-slider-item img{
+        width: 200px;
+        border-radius: 16px;
+    }
+    .slider-xit-prodaj{
+        width: 100%;
+    }
+    .product-slider-vse{
+        display: flex;
+        justify-content: space-between;
+        padding:10px 14px;
+        align-items: center;
+    }
+    .product-carousel-wrapper{
+        width: 100%;
+        position: relative;
+    }
+    .product-slider{
+        overflow: hidden;
+    }
+    .restoslider-next-prev{
+        position: absolute;
+        z-index: 100;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        top: 30%;
+    }
+    .slider-btn1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 46px;
+        height: 46px;
+        border-radius: 50%;
+        background-color: #fff;
+        box-shadow: -2px 6px 12px rgb(158, 158, 158,0.3);
+        transition: all 0.5s ease;
+        border: none;
+        outline: none;
+    }
+    .slider-btn2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 46px;
+        height: 46px;
+        border-radius: 50%;
+        background-color: #fff;
+        box-shadow: 2px 6px 12px rgb(158, 158, 158,0.3);
+        transition: all 0.5s ease;
+        border: none;
+        outline: none;
+    }
+    .slider-btn1 img{
+        width: 14x;
+        height: 14px;
+    }
+    .slider-btn2 img{
+        width: 14x;
+        height: 14px;
+    }
+    .slider-btn1:nth-child(1) img{
+        transform: rotate(-180deg);
+    }
+    .slider-btn1.hide{
+        opacity: 0;
+    }
+    .slider-btn2.hide{
+        opacity: 0;
+    }
+    .product-slider{
+        width: 1060px;
+        margin: 0 auto;
+        overflow-x: hidden;
+    }
+
+
+    .resto-slider-card{
+        position: relative;
+        background-color: rgb(255, 193, 22);
+        width: 140px;
+        height: 140px;
+        border-radius: 20px;
+        overflow:hidden;
+        transition: 0.4s ease;
+        cursor: pointer;
+    }
+    .resto-slider-card:hover{
+        position: relative;
+        background-color: rgb(255, 233, 31);
+        width: 140px;
+        height: 140px;
+        border-radius: 20px;
+        overflow:hidden;
+        
+    }
+    .resto-slider-card img{
+        bottom: -40px;
+        right: -30px;
+        position: absolute;
+        width: 140px;
+        object-fit: contain;
+        z-index: 9;
+    }
+    .resto-cart-title{
+        position: absolute;
+        width: 100px;
+        top: 6%;
+        left: 10%;
+        z-index: 10;
+        font-size: 22px;
+        font-weight: 700;
+        color: rgb(70, 70, 70);
+    }
+}

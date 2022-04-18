@@ -1,0 +1,174 @@
+
+@media only screen and (min-width:1200px){
+    .prosuct-carousel{
+        
+    }
+    .aksiyaslider-xit-prodaj-title{
+        font-size: 26px;
+        padding: 20px 10px 0 10px;
+        font-weight: 700;
+    }
+    
+
+    .sale-off{
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        top: -14px;
+        right: -3px;
+        border-radius: 14px;
+        width: 40px;
+        height: 30px;
+        background-color: rgb(64, 201, 1);
+    }
+    .slider-xit-prodaj-btn{
+
+    }
+    .aksiyaproduct-slider-item{
+        
+    }
+
+    .slider-xit-prodaj{
+        width: 100%;
+    }
+    .product-carousel-wrapper{
+        width: 100%;
+        position: relative;
+    }
+    .aksiyaproduct-slider{
+        width: 1080px;
+        margin: 0 auto;
+        overflow-x: hidden;
+    }
+    .aksiyacard{
+
+        margin: 14px;
+        margin-bottom: 10px;
+        width: 240px;
+        height: 230px;
+        background-color: rgb(255, 255, 255);
+        border-radius: 24px;
+        box-shadow: 0px 3px 4px rgb(224, 224, 224);
+        transition: 0.3s ease;
+        overflow: hidden;
+        cursor: pointer;    
+    }
+    
+    
+    .aksiyacard:hover{
+        margin: 14px;
+        margin-bottom: 10px;
+        width: 240px;
+        height: 230px;
+        background-color: rgb(255, 255, 255);
+        border-radius: 24px;
+        box-shadow: 2px 4px 14px rgb(214, 214, 214);
+        cursor: pointer;
+    }
+    .card:hover{
+        background-color:rgb(255, 219, 59);
+    }
+    .aksiyacard img{
+        object-fit: contain;
+        width: 240px;
+        border-top-right-radius: 24px;
+        border-bottom-right-radius: 24px;
+        border-top-left-radius: 24px;
+    }
+    
+    .slider-next-prev{
+        position: absolute;
+        z-index: 100;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        top: 38%;
+    }
+    .aksiyaslider-btn1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 46px;
+        height: 46px;
+        border-radius: 50%;
+        background-color: #fff;
+        box-shadow: -2px 6px 12px rgb(158, 158, 158,0.3);
+        transition: all 0.5s ease;
+        border: none;
+        outline: none;
+        cursor: pointer;
+    }
+    .aksiyaslider-btn2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 46px;
+        height: 46px;
+        border-radius: 50%;
+        background-color: #fff;
+        box-shadow: 2px 6px 12px rgb(158, 158, 158,0.3);
+        transition: all 0.5s ease;
+        border: none;
+        outline: none;
+        cursor: pointer;
+    }
+    .aksiyaslider-btn1 img{
+        width: 14x;
+        height: 14px;
+    }
+    .aksiyaslider-btn2 img{
+        width: 14x;
+        height: 14px;
+    }
+    .aksiyaslider-btn1:nth-child(1) img{
+        transform: rotate(-180deg);
+    }
+    .aksiyaslider-btn1.hide{
+        opacity: 0;
+    }
+    .aksiyaslider-btn2.hide{
+        opacity: 0;
+    }
+    .product-slider{
+        width: 1060px;
+        margin: 0 auto;
+        overflow-x: hidden;
+    }
+    .slider-xit-prodaj-btn{
+        padding: 16px 16px;
+        display: flex;
+        border-radius: 12px;
+        border: none;
+        outline: none;
+        justify-content: center;
+        background-color: rgb(235, 235, 235);
+        cursor: pointer;
+    }
+    .slider-xit-prodaj-btn-tit{
+        display: flex;
+        align-items: center;
+        font-size: 18px;
+        font-weight: 600;
+    }
+    .slider-xit-prodaj-btn-tit img{
+        width: 10px;
+        padding-left: 10px;
+    }
+    .aksiyacard-text{
+        padding: 8px 14px;
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    .aksiyacard-rekomend{
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+        font-weight: 400;
+    }
+    .aksiyacard-rekomend img{
+        width: 14px;
+        padding-right: 10px;
+    }
+    
+}
