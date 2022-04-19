@@ -59,13 +59,20 @@
 }
 .header-search img{
     padding: 0 16px;
-    width: 24px;
+    width: 20px;
     object-fit: contain;  
 }
 .header-search input{
     border: none;
+    width: 320px;
     outline: none;
     background: transparent;
+}
+input,
+input::-webkit-input-placeholder {
+    font-size: 16px;
+    line-height: 3;
+    color: rgb(155, 155, 155);
 }
 .header-search-but{
     background-color: rgb(255, 232, 28);

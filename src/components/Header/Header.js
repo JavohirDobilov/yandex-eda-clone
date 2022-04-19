@@ -22,7 +22,7 @@ const Header = ({ scroll }) => {
                                 <div className='header-search'>
                                     <div className='header-search-input-flex'>
                                         <img src={searchSvg} />
-                                        <input placeholder='fdsfdfsdfsdf' type="text" />
+                                        <input placeholder='Найти ресторан, блюду или товар' type="text" />
                                     </div>
                                     <button className='header-search-but'>
                                         Найти
@@ -68,7 +68,7 @@ const Header = ({ scroll }) => {
                                 <div className='header-search'>
                                     <div className='header-search-input-flex'>
                                         <img src={searchSvg} />
-                                        <input placeholder='fdsfdfsdfsdf' type="text" />
+                                        <input placeholder='Найти ресторан, блюду или товар' type="text" />
                                     </div>
                                     <button className='header-search-but'>
                                         Найти
