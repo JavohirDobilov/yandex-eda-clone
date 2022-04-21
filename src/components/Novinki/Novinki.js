@@ -1,7 +1,9 @@
 
 import '@splidejs/react-splide/css';
 import React, { useState } from 'react'
+// import "../Novinki/novinki.css"
 import "../AksiyaSlider/aksiyaslider.css"
+
 import image from "../../img/aksiya/img1.jpg"
 
 import flame from "../../img/aksiya/flamepng.png"

@@ -115,7 +115,7 @@ const RestoranScroll = () => {
                                 <img src={next} />
                             </button>
                         </div>
-                        <div className='product-slider'>
+                        <div className='restoran-slider'>
                             <div style={sliderXitbody}>
                                 {restoprodaj.map(item => (
                                     <div style={sliderXitItem} key={item.id} className="product-slider-item">

@@ -37,7 +37,7 @@ const AksiyaSlider = () => {
         {
             id: 2,
             image: img2,
-            title: 'Ma Mi Ханонская Лапша',
+            title: 'Ma Mi Ханонская',
 
         },
         {

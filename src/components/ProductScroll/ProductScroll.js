@@ -126,13 +126,13 @@ const ProductScroll = () => {
                                 <img src={next} />
                             </button>
                         </div>
-                        <div className='product-slider'>
+                        <div className='products-slider'>
                             <div style={sliderXitbody}>
                                 {xitprodaj.map(item => (
                                     <div style={sliderXitItem} key={item.id} className="product-slider-item">
 
                                         {/* <img src={item.image} /> */}
-                                        <div className='card' style={{ backgroundColor: item.color }}>
+                                        <div className='product-card' style={{ backgroundColor: item.color }}>
                                             <img src={item.image} />
                                             {item.text ? item.text : ""}
                                         </div>

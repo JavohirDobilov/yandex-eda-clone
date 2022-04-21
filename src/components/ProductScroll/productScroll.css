@@ -1,4 +1,137 @@
 
+@media only screen and (min-width:991px){
+    .prosuct-carousel{
+        
+    }
+    .slider-xit-prodaj-title{
+        font-size: 44px;
+        padding: 30px 0;
+        font-weight: 700;
+    }
+    .product-slider-vse{
+        display: flex;
+        justify-content: space-between;
+        padding:10px 14px;
+        align-items: center;
+    }
+    .slider-xit-prodaj-btn{
+
+    }
+    .product-slider-item img{
+        width: 200px;
+        border-radius: 16px;
+    }
+    .slider-xit-prodaj{
+        width: 100%;
+    }
+    .product-carousel-wrapper{
+        width: 100%;
+        position: relative;
+    }
+    .products-slider{
+        width: 920px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    .product-card{
+        display: flex;
+        justify-content: center;
+        width: 175px;
+        height: 130px;
+        background-color: rgb(255, 213, 25);
+        border-radius: 16px;
+        cursor: pointer;
+    }
+    .product-card:hover{
+        background-color:rgb(255, 219, 59);
+    }
+    .product-card img{
+        width: 100px;
+        object-fit: contain;
+        
+
+    }
+    
+    .productslider-next-prev{
+        position: absolute;
+        z-index: 100;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        top: 28%;
+    }
+    .slider-btn1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 46px;
+        height: 46px;
+        border-radius: 50%;
+        background-color: #fff;
+        box-shadow: -2px 6px 12px rgb(158, 158, 158,0.3);
+        transition: all 0.5s ease;
+        border: none;
+        outline: none;
+        cursor: pointer;
+    }
+    .slider-btn2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 46px;
+        height: 46px;
+        border-radius: 50%;
+        background-color: #fff;
+        box-shadow: 2px 6px 12px rgb(158, 158, 158,0.3);
+        transition: all 0.5s ease;
+        border: none;
+        outline: none;
+        cursor: pointer;
+    }
+    .slider-btn1 img{
+        width: 14x;
+        height: 14px;
+    }
+    .slider-btn2 img{
+        width: 14x;
+        height: 14px;
+    }
+    .slider-btn1:nth-child(1) img{
+        transform: rotate(-180deg);
+    }
+    .slider-btn1.hide{
+        opacity: 0;
+    }
+    .slider-btn2.hide{
+        opacity: 0;
+    }
+    .product-slider{
+        width: 1060px;
+        margin: 0 auto;
+        overflow-x: hidden;
+    }
+    .slider-xit-prodaj-btn{
+        padding: 16px 16px;
+        display: flex;
+        border-radius: 12px;
+        border: none;
+        outline: none;
+        justify-content: center;
+        background-color: rgb(235, 235, 235);
+        cursor: pointer;
+    }
+    .slider-xit-prodaj-btn-tit{
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+        font-weight: 500;
+    }
+    .slider-xit-prodaj-btn-tit img{
+        width: 10px;
+        padding-left: 10px;
+    }
+    
+}
 @media only screen and (min-width:1200px){
     .prosuct-carousel{
         
@@ -28,10 +161,12 @@
         width: 100%;
         position: relative;
     }
-    .product-slider{
+    .products-slider{
+        width: 1080px;
+        margin: 0 auto;
         overflow: hidden;
     }
-    .card{
+    .product-card{
         display: flex;
         justify-content: center;
         width: 200px;
@@ -40,10 +175,10 @@
         border-radius: 16px;
         cursor: pointer;
     }
-    .card:hover{
+    .product-card:hover{
         background-color:rgb(255, 219, 59);
     }
-    .card img{
+    .product-card img{
         object-fit: contain;
     }
     

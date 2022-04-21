@@ -1,79 +1,163 @@
-.vse-products{
-    padding-top: 40px;
-}
-
-.vse-products-contens{
-    display: flex;
-    flex-wrap: wrap;
-}
-.vse-products-title{
-    padding-left: 24px;
-    font-size: 24px;
-    font-weight: 700;
-}
-
-.vse-restoran-product{
-    display: flex;
-    justify-content: center;
-    width: 33.3%;
-}
-
-.sale-off{
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    top: -14px;
-    right: -3px;
-    border-radius: 14px;
-    width: 40px;
-    height: 30px;
-    background-color: rgb(64, 201, 1);
-}
-.sale-off img{
-    width: 16px;
-    object-fit: contain;
-}
-.vse-restoran-card{
-    position: relative;
-    margin: 20px;
-    width: 320px;
-    height: 300px;
-    background-color: rgb(255, 255, 255);
-    box-shadow:0px 3px 4px rgb(231, 231, 231);
-    border-radius: 20px;
-    transition: 0.4s ease;
-    cursor: pointer;
-}
-.vse-restoran-card:hover{
-    margin: 20px;
-    width: 320px;
-    height: 300px;
-    background-color: rgb(255, 255, 255);
-    box-shadow:2px 6px 22px rgb(219, 219, 219);
-    border-radius: 20px;
-}
-.vse-restoran-card-image img{
+@media only screen and (min-width:991px){
+    .vse-products{
+        padding-top: 40px;
+    }
     
-    width: 320px;
-    height: 200px;
-    border-bottom-right-radius: 20px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+    .vse-products-contens{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .vse-products-title{
+        padding-left: 24px;
+        font-size: 24px;
+        font-weight: 700;
+    }
     
+    .vse-restoran-product{
+        display: flex;
+        justify-content: center;
+        width: 33.3%;
+    }
+    
+    .sale-off{
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        top: -14px;
+        right: -3px;
+        border-radius: 14px;
+        width: 40px;
+        height: 30px;
+        background-color: rgb(64, 201, 1);
+    }
+    .sale-off img{
+        width: 16px;
+        object-fit: contain;
+    }
+    .vse-restoran-card{
+        position: relative;
+        margin: 20px;
+        width: 300px;
+        height: 300px;
+        background-color: rgb(255, 255, 255);
+        box-shadow:0px 3px 4px rgb(231, 231, 231);
+        border-radius: 20px;
+        transition: 0.4s ease;
+        cursor: pointer;
+    }
+    .vse-restoran-card:hover{
+        margin: 20px;
+        width: 320px;
+        height: 300px;
+        background-color: rgb(255, 255, 255);
+        box-shadow:2px 6px 22px rgb(219, 219, 219);
+        border-radius: 20px;
+    }
+    .vse-restoran-card-image img{
+        
+        width: 300px;
+        height: 200px;
+        border-bottom-right-radius: 20px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        
+    }
+    
+    .vse-restoran-card-context{
+        padding: 16px;
+    }
+    .vse-restoran-context-box{
+        font-size: 24px;
+        font-weight: 600;
+    }
+    .vse-restoran-context-box-recom{
+        display: flex;
+        align-items: center;
+    }
+    .vse-restoran-context-box-recom img{
+        width: 14px;
+        padding: 0 6px;
+    }
+}
+@media only screen and (min-width:1200px){
+    .vse-products{
+        padding-top: 40px;
+    }
+    
+    .vse-products-contens{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .vse-products-title{
+        padding-left: 24px;
+        font-size: 24px;
+        font-weight: 700;
+    }
+    
+    .vse-restoran-product{
+        display: flex;
+        justify-content: center;
+        width: 33.3%;
+    }
+    
+    .sale-off{
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        top: -14px;
+        right: -3px;
+        border-radius: 14px;
+        width: 40px;
+        height: 30px;
+        background-color: rgb(64, 201, 1);
+    }
+    .sale-off img{
+        width: 16px;
+        object-fit: contain;
+    }
+    .vse-restoran-card{
+        position: relative;
+        margin: 20px;
+        width: 320px;
+        height: 300px;
+        background-color: rgb(255, 255, 255);
+        box-shadow:0px 3px 4px rgb(231, 231, 231);
+        border-radius: 20px;
+        transition: 0.4s ease;
+        cursor: pointer;
+    }
+    .vse-restoran-card:hover{
+        margin: 20px;
+        width: 320px;
+        height: 300px;
+        background-color: rgb(255, 255, 255);
+        box-shadow:2px 6px 22px rgb(219, 219, 219);
+        border-radius: 20px;
+    }
+    .vse-restoran-card-image img{
+        
+        width: 320px;
+        height: 200px;
+        border-bottom-right-radius: 20px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        
+    }
+    
+    .vse-restoran-card-context{
+        padding: 16px;
+    }
+    .vse-restoran-context-box{
+        font-size: 24px;
+        font-weight: 600;
+    }
+    .vse-restoran-context-box-recom{
+        display: flex;
+        align-items: center;
+    }
+    .vse-restoran-context-box-recom img{
+        width: 14px;
+        padding: 0 6px;
+    }
 }
 
-.vse-restoran-card-context{
-    padding: 16px;
-}
-.vse-restoran-context-box{
-    font-size: 24px;
-    font-weight: 600;
-}
-.vse-restoran-context-box-recom{
-    display: flex;
-    align-items: center;
-}
-.vse-restoran-context-box-recom img{
-    width: 14px;
-    padding: 0 6px;
-}

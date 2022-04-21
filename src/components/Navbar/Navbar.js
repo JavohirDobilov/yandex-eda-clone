@@ -16,7 +16,10 @@ const Navbar = () => {
     const [sortirovka, setSortirovka] = useState(false)
 
 
-    const [sevodzav,setSevodZav] = useState(1)
+    const [sevodzav, setSevodZav] = useState(1)
+
+
+    const [sortCircle, setSortCircle] = useState(1)
 
     const eshyoOptions = [{ id: 1, title: "Бургеры" },
     { id: 2, title: "Пицца" },
@@ -72,6 +75,14 @@ const Navbar = () => {
         { id: 10, date: "05:00" },
         { id: 11, date: "05:30" }
     ]
+
+    const sort = [
+        {id:1,title:'Доверяюсь вам'},
+        {id:2,title:'С высоким рейтингом'},
+        {id:3,title:'Быстрые'},
+        {id:4,title:'Недорогие'},
+        {id:5,title:'Дорогие'}
+    ]
     return (
         <div className='navbar'>
             <div className='container'>
@@ -93,7 +104,11 @@ const Navbar = () => {
                             Суши
                         </div>
                         </Link>
-                        <div onClick={() => { setEshyo(!eshyo) }} className='navbar-item-2'>
+                        <div onClick={() => { 
+                            setEshyo(!eshyo)
+                            setDostavka(false)
+                            setSortirovka(false)
+                         }} className='navbar-item-2'>
                             <div className='navbar-item-eshyo'>
                                 Ещё
                                 <img src={arrow} />
@@ -112,51 +127,81 @@ const Navbar = () => {
                     </div>
                     <div className='navbar-sorts'>
                         <div className='navbar-sorts-dostavka'>
-                            <div onClick={() => setDostavka(!dostavka)} style={{display:'flex'}}>
-                            <div className='navbar-sorts-dostavka-title'>
-                                Доставка:
-                            </div>
-                            <div className='navbar-sorts-dostavka-time'>
-                                сейчас
-                                <img src={arrow} />
-                            </div>
+                            <div onClick={() => { 
+                            setEshyo(false)
+                            setDostavka(!dostavka)
+                            setSortirovka(false)
+                         }} style={{ display: 'flex' }}>
+                                <div className='navbar-sorts-dostavka-title'>
+                                    Доставка:
+                                </div>
+                                <div className='navbar-sorts-dostavka-time'>
+                                    сейчас
+                                    <img src={arrow} />
+                                </div>
                             </div>
                             <div className='navbar-dostavka-content'>
                                 <div className={(dostavka && "active") + (" content")}>
                                     <div className='navbar-dostavka-content-button'>
-                                        <div onClick={()=>setSevodZav(1)}className={(sevodzav ===1 && "active")+(' navbar-dostavka-content-button-box')}>
+                                        <div onClick={() => setSevodZav(1)} className={(sevodzav === 1 && "active") + (' navbar-dostavka-content-button-box')}>
                                             Сегодня
                                         </div>
-                                        <div onClick={()=>setSevodZav(2)}className={(sevodzav ===2 && "active")+(' navbar-dostavka-content-button-box')}>
+                                        <div onClick={() => setSevodZav(2)} className={(sevodzav === 2 && "active") + (' navbar-dostavka-content-button-box')}>
                                             Завтра
                                         </div>
                                     </div>
                                 </div>
                                 <div className={(dostavka && "active") + (" navbar-dostavka-items")}>
-                                    {sevodzav ===1 ? 
-                                      dostSegodnyaDate.map(item => (
-                                        <div key={item.id} onClick={() => setDostavka(!dostavka)} className="navbar-dostavka-item">
+                                    {sevodzav === 1 ?
+                                        dostSegodnyaDate.map(item => (
+                                            <div key={item.id} onClick={() => setDostavka(!dostavka)} className="navbar-dostavka-item">
 
-                                            {item.date}
-                                        </div>
-                                    )) :
+                                                {item.date}
+                                            </div>
+                                        )) :
                                         dosSavtraDate.map(item => (
-                                          <div key={item.id} onClick={() => setDostavka(!dostavka)} className="navbar-dostavka-item">
-  
-                                              {item.date}
-                                          </div>
-                                      ))
+                                            <div key={item.id} onClick={() => setDostavka(!dostavka)} className="navbar-dostavka-item">
+
+                                                {item.date}
+                                            </div>
+                                        ))
                                     }
                                 </div>
                             </div>
                         </div>
 
-                        <div onClick={()=>setSortirovka(!sortirovka)} className='navbar-sorts-sortirovka'>
-                            <div className='navbar-sorts-sortirovka-icon'>
-                                <img src={filter} />
+                        <div  className='navbar-sorts-sortirovka'>
+                            <div onClick={() => { 
+                            setEshyo(false)
+                            setDostavka(false)
+                            setSortirovka(!sortirovka)
+                         }} className='navbar-sorts-sortirovka-but'>
+                                <div className='navbar-sorts-sortirovka-icon'>
+                                    <img src={filter} />
+                                </div>
+                                <div className='navbar-sorts-sortirovka-title'>
+                                    Сортировка
+                                </div>
                             </div>
-                            <div className='navbar-sorts-sortirovka-title'>
-                                Сортировка
+                            <div className="navbar-sort-content">
+                                <div className={(sortirovka && "active") + (" navbar-sort-items")}>
+                                    <div className='navbar-sort-title'>
+                                        Какие показать значала?
+                                    </div>
+                                    {sort.map(item => (
+                                        <div key={item.id} onClick={()=>setSortCircle(item.title)} className='navbar-sort-item'>
+                                            <div className={(sortCircle ===item.title && "active")+(' navbar-sort-circle')}>
+                                            </div>
+                                            {item.title}
+                                        </div>
+                                    ))}
+                                    <div className='navbar-sort-liner'>
+
+                                    </div>
+                                    <button onClick={()=>setSortirovka(!sortirovka)}className='navbar-sort-pokazat'>
+                                        Показать
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
